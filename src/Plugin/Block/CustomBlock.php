@@ -33,7 +33,10 @@ class CustomBlock extends BlockBase implements BlockPluginInterface
         '@link' => $config['custom_block_link'],
         '@text' => $config['custom_block_text'],
         '@html' => $config['custom_block_html']['value']
-      ])
+      ]),
+      '#attached' => [
+        'library' => 'my_custom_module/custom-block-script'
+      ]
     ];
   }
 

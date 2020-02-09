@@ -1,3 +1,3 @@
-global-script:
+custom-block-script:
   js:
-    js/script.js
+    js/custom-block.js: {}
