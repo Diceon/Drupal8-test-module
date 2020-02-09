@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Implements hook_help().
+ */
+function my_custom_module_help($route_name, \Drupal\Core\Routing\RouteMatchInterface $route_match)
+{
+  switch ($route_name) {
+    case 'help.page.my_custom_module':
+      return t('
+        <h2>My custom module help page.</h2>
+        <h3>Instructions</h3>
+        <p>- Insert instructions here -</p>
+      ');
+  }
+}

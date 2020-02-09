@@ -1,0 +1,13 @@
+block.settings.custom_block:
+  type: block_settings
+  label: 'Custom block settings'
+  mapping:
+    custom_block_link:
+      type: url
+      label: 'Custom block url'
+    custom_block_text:
+      type: textarea
+      label: 'Custom block textarea'
+    custom_block_html:
+      type: text_format
+      label: 'Custom block html'
